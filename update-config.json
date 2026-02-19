@@ -1,9 +1,9 @@
 {
   "latestVersion": "1.1.5",
-  "updateUrl": "https://github.com/your-username/your-repo/releases",
+  "updateUrl": "https://afdian.com/a/Infatuation326",
   "changelog": {
     "1.1.5": {
-      "releaseDate": "2024-12-18",
+      "releaseDate": "2026-2-19",
       "features": [
         "新增【极光之夜】特殊主题，极光波带+星光闪烁+光粒子流动",
         "新增专属启动动画，5秒极光特效+LOGO旋转+文字逐字显现",
@@ -24,7 +24,7 @@
       ]
     },
     "1.1.0": {
-      "releaseDate": "2024-01-15",
+      "releaseDate": "2026-2-18",
       "features": [
         "新增【最近玩过】，更快捷方便的启动最近玩过的版本！",
         "新增自定义背景和部分有关设置，更好看啦！",
@@ -47,7 +47,7 @@
       ]
     },
     "1.0.5": {
-      "releaseDate": "2024-01-10",
+      "releaseDate": "2026-2-17",
       "features": [
         "新增JAVA全局搜索，全盘JAVA一键添加"
       ],
@@ -64,3 +64,4 @@
     }
   }
 }
+
