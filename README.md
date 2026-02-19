@@ -176,145 +176,6 @@ LMCL（Lightning Minecraft Launcher）是一款专为中国玩家设计的 Minec
 
 ---
 
-## 🔄 更新日志
-
-
-### v1.1.5 (2026-02-19)
-
-#### 🎉 新增功能
-- 添加特殊主题，并且添加了【雷电工艺】【极光之夜】
-- 特殊主题添加动态背景，与众不同的启动动画
-
-#### 🔧 优化改进
-- 优化了动画
-- 优化了启动器的性能
-- 优化了主题的性能
-
-#### 🐛 问题修复
-- 修复Fabric部分严重启动失败问题
-- 修复部分下载失败问题
-- 修复部分启动游戏崩溃问题
-
-### v1.1.0 (2026-02-18)
-
-#### 🎉 新增功能
-- 优化下载器性能，库文件并发数提升至 20，资源文件并发数提升至 50
-- 添加资源文件预检查，只下载缺失的文件
-- 解决高版本（1.16+）下载速度慢的问题
-- 修复 Fabric 启动时的重复类错误
-- 优化启动游戏按钮，添加多层阴影和涟漪效果
-- 所有 emoji 替换为自定义图标，界面更加统一美观
-
-#### 🔧 优化改进
-- 重置页面和弹窗的滚动位置和折叠状态
-- 添加图标白色底衬效果，提升可读性
-- 优化 Fabric 图标大小显示
-- 添加全局动画开关，可在设置中关闭所有过渡动画
-
-#### 🐛 问题修复
-- 修复 CSS 兼容性警告
-- 修复版本组闪烁问题
-- 修复崩溃窗口滚动位置重置问题
-
-### v1.1.0 (2026-02-18)
-
-#### 🎉 新增功能
-- 优化下载器性能，库文件并发数提升至 20，资源文件并发数提升至 50
-- 添加资源文件预检查，只下载缺失的文件
-- 解决高版本（1.16+）下载速度慢的问题
-- 修复 Fabric 启动时的重复类错误
-- 优化启动游戏按钮，添加多层阴影和涟漪效果
-- 所有 emoji 替换为自定义图标，界面更加统一美观
-
-#### 🔧 优化改进
-- 重置页面和弹窗的滚动位置和折叠状态
-- 添加图标白色底衬效果，提升可读性
-- 优化 Fabric 图标大小显示
-- 添加全局动画开关，可在设置中关闭所有过渡动画
-
-#### 🐛 问题修复
-- 修复 CSS 兼容性警告
-- 修复版本组闪烁问题
-- 修复崩溃窗口滚动位置重置问题
-
-### v1.0.5 (2026-02-17)
-
-#### 🎉 新增功能
-- 添加模组下载功能
-- 支持正版登录
-
-#### 🔧 优化改进
-- 优化主页布局
-- 改进下载管理器
-
-[查看完整更新历史](版本更新历史.md)
-
----
-
-## 🛠️ 技术栈
-
-- **框架**: Electron
-- **前端**: HTML5 + CSS3 + JavaScript
-- **后端**: Node.js
-- **下载源**: BMCLAPI（游戏文件）、MCIM（模组）
-- **认证**: Microsoft OAuth 2.0
-
----
-
-## 📂 项目结构
-
-```
-LMCL/
-├── assets/              # 资源文件
-│   └── icons/          # 图标文件
-├── md/                 # 文档文件
-├── main.js             # Electron 主进程
-├── renderer.js         # 渲染进程逻辑
-├── index.html          # 主界面
-├── style.css           # 样式文件
-├── minecraft-downloader.js  # 下载器
-├── minecraft-launcher.js    # 启动器
-├── mod-manager.js      # 模组管理器
-├── microsoft-auth.js   # 微软认证
-└── package.json        # 项目配置
-```
-
----
-
-## 🤝 贡献指南
-
-欢迎提交 Issue 和 Pull Request！
-
-### 开发环境搭建
-
-1. **克隆仓库**
-```bash
-git clone https://github.com/your-username/lmcl.git
-cd lmcl
-```
-
-2. **安装依赖**
-```bash
-npm install
-```
-
-3. **启动开发模式**
-```bash
-npm start
-```
-
-4. **打包应用**
-```bash
-npm run build
-```
-
-### 代码规范
-
-- 使用 2 空格缩进
-- 遵循 ESLint 规则
-- 提交前请测试功能
-- 提交信息使用中文，格式：`类型: 描述`
-
 ### 提交类型
 
 - `新增`: 新功能
@@ -328,7 +189,7 @@ npm run build
 ## ❓ 常见问题
 
 ### Q: 下载速度慢怎么办？
-A: 启动器默认使用 BMCLAPI 国内镜像，速度已经很快。如果仍然慢，请检查网络连接或尝试切换下载源。
+A: 启动器默认使用国内镜像，速度已经很快。如果仍然慢，请检查网络连接或尝试切换下载源。
 
 ### Q: 游戏启动失败？
 A: 请检查：
@@ -339,7 +200,7 @@ A: 请检查：
 
 ### Q: 如何安装模组？
 A: 
-1. 确保已安装 Fabric 或 Forge 版本
+1. 确保已安装 Fabric 版本
 2. 前往"下载 → 模组下载"搜索模组
 3. 选择对应游戏版本下载
 4. 或手动将模组文件放入版本的 mods 文件夹
@@ -356,16 +217,8 @@ A: 启动器会自动检测更新并显示公告，请前往 Releases 页面下�
 
 如果遇到问题或有建议，欢迎通过以下方式反馈：
 
-- 📧 **邮箱**: your-email@example.com
-- 💬 **QQ 群**: 123456789
-- 🐛 **Issue**: [提交 Issue](https://github.com/your-username/lmcl/issues)
-- 💡 **讨论**: [GitHub Discussions](https://github.com/your-username/lmcl/discussions)
-
----
-
-## 📄 开源协议
-
-本项目采用 [MIT License](LICENSE) 开源协议。
+- 📧 **邮箱**: 3485246598@qq.com
+- 💬 **QQ 群**: 1006912286
 
 ---
 
@@ -373,18 +226,10 @@ A: 启动器会自动检测更新并显示公告，请前往 Releases 页面下�
 
 感谢以下项目和服务：
 
+- [Minecraft](https://www.minecraft.net/) - 伟大的游戏
 - [Electron](https://www.electronjs.org/) - 跨平台桌面应用框架
 - [BMCLAPI](https://bmclapidoc.bangbang93.com/) - 提供国内镜像下载服务
 - [MCIM](https://www.mcmod.cn/) - 提供模组下载服务
-- [Minecraft](https://www.minecraft.net/) - 伟大的游戏
-
----
-
-## 📊 统计信息
-
-![GitHub stars](https://img.shields.io/github/stars/your-username/lmcl?style=social)
-![GitHub forks](https://img.shields.io/github/forks/your-username/lmcl?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/your-username/lmcl?style=social)
 
 ---
 
@@ -392,6 +237,6 @@ A: 启动器会自动检测更新并显示公告，请前往 Releases 页面下�
 
 **如果这个项目对你有帮助，请给一个 ⭐ Star 支持一下！**
 
-Made with ❤️ by [Your Name](https://github.com/your-username)
+Made with ❤️ by [Infatuation](https://github.com/jet2025-minewars)
 
 </div>
